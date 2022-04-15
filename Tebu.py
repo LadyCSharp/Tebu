@@ -2,10 +2,11 @@
 
 from my_menu import *
 from two_pic import some_pic
+from victo import victorina
 #from account import check
 import account
-menu_puncts='- создать папку;- удалить (файл/папку);- копировать (файл/папку);- просмотр содержимого рабочей директории;- посмотреть только папки;- посмотреть только файлы;- просмотр информации об операционной системе;- создатель программы;- играть в викторину;- мой банковский счет;- смена рабочей директории (*необ€зательный пункт);- выход.'.split(';')
-
+menu_puncts='- создать папку;- удалить (файл/папку);- копировать (файл/папку);- просмотр содержимого рабочей директории;- посмотреть только папки;- посмотреть только файлы;- просмотр информации об операционной системе;- создатель программы;- играть в викторину;- мой банковский счет;- смена рабочей директории;- выход.;- √лупый юзер робко пр€чет три картинки в каталоге'.split(';')
+pic_path=r'G:\Disk D\!!!lab\students\pictures'
 while True:
     choise=menu(menu_puncts)
     if choise==1:
@@ -24,6 +25,8 @@ while True:
         info()
     if choise==8:
         about()
+    if choise==9:
+        victorina()
     if choise==10:
         account.check()
     if choise==11:
@@ -31,4 +34,4 @@ while True:
     if choise==12:
         break
     if choise==13:
-        some_pic(r'G:\Disk D\!!!lab\students\pictures',5)
+        some_pic(pic_path,3)

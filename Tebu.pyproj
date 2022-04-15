@@ -32,6 +32,9 @@
     <Compile Include="two_pic.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="victo.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <InterpreterReference Include="Global|PythonCore|3.9" />
