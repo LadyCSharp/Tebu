@@ -9,6 +9,10 @@ def menu(menu_puncts):
         print(i,punct)
         i+=1
     choice=int(input())
+    if choice <=0:
+        choice=1
+    if choice>len(menu_puncts):
+        choice=len(menu_puncts)
     return choice
 def new_fold(name):
     if not os.path.exists(name):
