@@ -1,0 +1,54 @@
+def test_sqrt():
+    assert sqrt(0)==0
+    assert sqrt(1)==1
+    assert sqrt(4)==2
+    for x in range(-5,5,0.1):
+        assert sqrt(x)*sqrt(x)==x
+
+ def test_pi():
+    assert pi>3
+    #assert fabs(sin(pi))<0.00001
+    #assert fabs(cos(pi)-1)<0.00001   
+
+
+
+def test_hypot():
+    assert hypot(3,4)==5
+    for x in range(-5,5,0.1):
+        for y in range(-5,5,0.1):
+            assert hypot(x,y)==sqrt(x**2+y**2)
+
+def test_filter:
+    l=np.arange(-10,10,1)
+    for el in filter(lambda x:x%2==0, l):
+        assert el in l
+        assert el%2==0
+    for el in filter(lambda x:x<=0, l):
+        assert el in l
+        assert el>=0
+    #, map, sorted
+
+def test_map:
+    l=np.arange(-10,10,1)
+    assert len(map(lambda x:x**2),l)==len(l)
+    for el in map(lambda x:abs(x), l):
+        assert el>=0
+        assert (el in l) or (-el in l)
+
+def test_sorted:
+    l=np.random.randint(-10,10,size=10)
+    assert len(sorted(l))==len(l)
+    for el in l:
+        assert el in sorted(l)
+    for el in sorted(l):
+        assert el in l
+
+
+ for p in rand_pers(pers,3):
+        assert p in pers.keys()
+
+
+
+
+import numpy as np
+from numpy.core.fromnumeric import size
