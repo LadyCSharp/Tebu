@@ -48,3 +48,14 @@ def about():
     
 def cd(name):
     os.chdir(name)
+
+def  save_list():
+     with open('listdir.txt', 'wt') as f:
+        f.write('files:')
+        for p in os.listdir():
+            if os.path.isfile(p):
+                f.write(p+', ')
+        f.write('\ndirs:')
+        for p in os.listdir():
+            if os.path.isdir(p):
+               f.write(p+', ')
