@@ -1,2 +1,2 @@
-files:.gitattributes, .gitignore, account.json, account.json.bak, account.py, account.txt, copyrabbit.txt, listdir.txt, my_menu.py, rabbit.txt, Tebu.py, Tebu.pyproj, Tebu.sln, test_filemanager.py, test_python.py, test_python1.py, two_pic.py, victo.py, 
+files:.gitattributes, .gitignore, account.json, account.json.bak, account.py, account.txt, copyrabbit.txt, listdir.txt, listdir1.txt, my_menu.py, rabbit.txt, Tebu.py, Tebu.pyproj, Tebu.sln, test_filemanager.py, test_python.py, test_python1.py, two_pic.py, victo.py, 
 dirs:.git, .mypy_cache, .pytest_cache, .vs, env, myp, q1, qq, TestResults, __pycache__, 

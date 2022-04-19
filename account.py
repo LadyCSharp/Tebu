@@ -12,13 +12,13 @@ def check():
     while True:
         choise=menu(account_menu_puncts)
         if choise==1:
-            v=int(input('¬ведите вносимую сумму\n'))
+            v=get_value('¬ведите вносимую сумму\n')
             value=put(value,v)
             print ('на счете', value, 'рублей')
             
         if choise==2:
             name=input('¬ведите название товара\n')
-            price=int(input('¬ведите стоимость товара\n'))
+            price=get_value('¬ведите стоимость товара\n')
             value=shop(value,price,name)
         if choise==3:
             hist()
@@ -67,3 +67,4 @@ def load_hist(path):
     with open(path, 'r') as f:
         his=json.load(f)
     return his
+
